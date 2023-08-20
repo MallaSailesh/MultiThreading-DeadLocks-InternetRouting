@@ -1,0 +1,4 @@
+**Q1**
+* Created thread for each student 
+* semaphore whose value intialised to number of washing machines so that if the value(no of washing machines unused) is greater than zero it will decrease(i.e used) or thread(student) will wait for a particular amount of time (patience time of that student) using sem_timedwait . After used (i.e after clothes washing was over) the value (no of washing machines unused) increase with the help of sem_post .
+* A student waits for washing machine only until his patience time (this is checked only with the help of sem_timedwait) if it returns 0 :- succes the student gets washing machine  else student leaves without getting washing machine .
